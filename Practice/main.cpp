@@ -7,9 +7,26 @@
 //
 
 #include <iostream>
+#include "VectorElementPractice.hpp"
+#include "ArgumentPractice.hpp"
+
+
+
 
 int main(int argc, const char * argv[]) {
 	// insert code here...
 	std::cout << "Hello, World!\n";
+	
+//	VectorElementPractice vep;
+	
+	ArgumentPractice ap;
+	
+	ap.run();
+	
+//	vep.run();
+	
+
+	
+	
     return 0;
 }

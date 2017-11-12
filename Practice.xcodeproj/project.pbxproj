@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C9189621FB6C50900689CDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189611FB6C50900689CDF /* main.cpp */; };
+		0C9189781FB6E90300689CDF /* VectorElementPractice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189711FB6E90300689CDF /* VectorElementPractice.cpp */; };
+		0C9189791FB6E90300689CDF /* ArgumentPractice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189721FB6E90300689CDF /* ArgumentPractice.cpp */; };
+		0C91897A1FB6E90300689CDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189731FB6E90300689CDF /* main.cpp */; };
+		0C91897B1FB6E90300689CDF /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189771FB6E90300689CDF /* Sample.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C91895E1FB6C50900689CDF /* Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C9189611FB6C50900689CDF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0C91895E1FB6C50900689CDF /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9189711FB6E90300689CDF /* VectorElementPractice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VectorElementPractice.cpp; path = Practice/VectorElementPractice.cpp; sourceTree = SOURCE_ROOT; };
+		0C9189721FB6E90300689CDF /* ArgumentPractice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArgumentPractice.cpp; path = Practice/ArgumentPractice.cpp; sourceTree = SOURCE_ROOT; };
+		0C9189731FB6E90300689CDF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Practice/main.cpp; sourceTree = SOURCE_ROOT; };
+		0C9189741FB6E90300689CDF /* VectorElementPractice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VectorElementPractice.hpp; path = Practice/VectorElementPractice.hpp; sourceTree = SOURCE_ROOT; };
+		0C9189751FB6E90300689CDF /* ArgumentPractice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ArgumentPractice.hpp; path = Practice/ArgumentPractice.hpp; sourceTree = SOURCE_ROOT; };
+		0C9189761FB6E90300689CDF /* Sample.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Sample.hpp; path = Practice/Sample.hpp; sourceTree = SOURCE_ROOT; };
+		0C9189771FB6E90300689CDF /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sample.cpp; path = Practice/Sample.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,7 @@
 		0C9189551FB6C50800689CDF = {
 			isa = PBXGroup;
 			children = (
-				0C9189601FB6C50900689CDF /* Patterns */,
+				0C9189601FB6C50900689CDF /* Practice */,
 				0C91895F1FB6C50900689CDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +58,32 @@
 		0C91895F1FB6C50900689CDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0C91895E1FB6C50900689CDF /* Patterns */,
+				0C91895E1FB6C50900689CDF /* Practice */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0C9189601FB6C50900689CDF /* Patterns */ = {
+		0C9189601FB6C50900689CDF /* Practice */ = {
 			isa = PBXGroup;
 			children = (
-				0C9189611FB6C50900689CDF /* main.cpp */,
+				0C9189711FB6E90300689CDF /* VectorElementPractice.cpp */,
+				0C9189721FB6E90300689CDF /* ArgumentPractice.cpp */,
+				0C9189731FB6E90300689CDF /* main.cpp */,
+				0C9189741FB6E90300689CDF /* VectorElementPractice.hpp */,
+				0C9189751FB6E90300689CDF /* ArgumentPractice.hpp */,
+				0C9189761FB6E90300689CDF /* Sample.hpp */,
+				0C9189771FB6E90300689CDF /* Sample.cpp */,
 			);
+			name = Practice;
 			path = Patterns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0C91895D1FB6C50900689CDF /* Patterns */ = {
+		0C91895D1FB6C50900689CDF /* Practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0C9189651FB6C50900689CDF /* Build configuration list for PBXNativeTarget "Patterns" */;
+			buildConfigurationList = 0C9189651FB6C50900689CDF /* Build configuration list for PBXNativeTarget "Practice" */;
 			buildPhases = (
 				0C91895A1FB6C50900689CDF /* Sources */,
 				0C91895B1FB6C50900689CDF /* Frameworks */,
@@ -77,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = Patterns;
+			name = Practice;
 			productName = Patterns;
-			productReference = 0C91895E1FB6C50900689CDF /* Patterns */;
+			productReference = 0C91895E1FB6C50900689CDF /* Practice */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0C9189591FB6C50800689CDF /* Build configuration list for PBXProject "Patterns" */;
+			buildConfigurationList = 0C9189591FB6C50800689CDF /* Build configuration list for PBXProject "Practice" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,7 +125,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0C91895D1FB6C50900689CDF /* Patterns */,
+				0C91895D1FB6C50900689CDF /* Practice */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9189621FB6C50900689CDF /* main.cpp in Sources */,
+				0C9189781FB6E90300689CDF /* VectorElementPractice.cpp in Sources */,
+				0C91897B1FB6E90300689CDF /* Sample.cpp in Sources */,
+				0C9189791FB6E90300689CDF /* ArgumentPractice.cpp in Sources */,
+				0C91897A1FB6E90300689CDF /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +249,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0C9189591FB6C50800689CDF /* Build configuration list for PBXProject "Patterns" */ = {
+		0C9189591FB6C50800689CDF /* Build configuration list for PBXProject "Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C9189631FB6C50900689CDF /* Debug */,
@@ -239,13 +258,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0C9189651FB6C50900689CDF /* Build configuration list for PBXNativeTarget "Patterns" */ = {
+		0C9189651FB6C50900689CDF /* Build configuration list for PBXNativeTarget "Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0C9189661FB6C50900689CDF /* Debug */,
 				0C9189671FB6C50900689CDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

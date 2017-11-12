@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Patterns.xcodeproj">
+      location = "self:/Users/mamunul/Documents/ios_workspace/Patterns/Practice.xcodeproj">
    </FileRef>
 </Workspace>
