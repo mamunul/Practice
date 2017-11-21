@@ -9,6 +9,7 @@
 #include <iostream>
 #include "ExampleA.hpp"
 #include "ExampleB.hpp"
+#include "BasicAlgorithm.hpp"
 //#include "VectorElementPractice.hpp"
 //#include "ArgumentPractice.hpp"
 
@@ -28,6 +29,10 @@ void test2(ExampleB e){//pass by value(copy fields only in 'e' Class Type of Exa
 	e.vir_pub_method2();//bind method at compile time
 	
 };
+
+void test4(ExampleB& e){
+	e.vir_pub_method2();
+}
 
 int main(int argc, const char * argv[]) {
 	// insert code here...
@@ -79,6 +84,19 @@ int main(int argc, const char * argv[]) {
 //	test2(*e);
 //	test2(*e2);
 //	ex.pub_method();
+	
+	BasicAlgorithm b; int n = 25;
+	std::vector<int> v = b.fibonacci_loop_memo(n);
+//
+	std::cout << v.at(n) << endl;
+	
+
+	std::cout << b.fibonacci_logn(n) << std::endl; //generates random output
+
+
+	
+	
+	
 
 	
     return 0;
