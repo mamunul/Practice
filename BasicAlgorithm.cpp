@@ -44,9 +44,9 @@ unsigned long long BasicAlgorithm::factorial_recursion(unsigned n){
 
 }
 
- void permutation(std::string p,std::string s,std::vector<std::string> *v){
+ void permutation(std::string p,std::string s,std::vector<std::string> *v, int r){
 	
-	if (s.empty()) {
+	if (p.length() == r) {
 		v->push_back(p);
 		return;
 	}
@@ -54,15 +54,15 @@ unsigned long long BasicAlgorithm::factorial_recursion(unsigned n){
 	for (int i = 0; i < s.length(); i++) {
 		string pr = p + s[i];
 		string sr = s.substr(0,i) + s.substr(i + 1,s.length() - (i + 1));
-		permutation(pr,sr,v);
+		permutation(pr,sr,v,r);
 	}
 
 }
 
-std::vector<std::string> BasicAlgorithm::permutation(std::string s){
+std::vector<std::string> BasicAlgorithm::permutation(std::string s,int r){
 
 	std::vector<std::string> result;
-	::permutation("",s,&result);
+	::permutation("",s,&result,r);
 	
 	return result;
 }
@@ -134,6 +134,71 @@ int BasicAlgorithm::fibonacci_logn(int n){
 	return r;
 }
 
+void combinate(string p, string s, int r,int k,vector<string> *v){
+	
+	
+	if(p.length() == r){
+	
+		v->push_back(p);
+		return;
+	}
 
+	for(int i = k;i<s.length();i++){
+		
+		string pr = p + s[i];
+		combinate(pr,s,r,i+1,v);
+		
+		
+	}
+}
 
+vector<string> BasicAlgorithm::combination(string s, int r){
 
+	vector<string> v;
+	
+	string prefix = "";
+
+	combinate(prefix,s, r, 0 , &v);
+
+	return v;
+}
+
+string BasicAlgorithm::longest_common_substring(string s1, string s2){
+	
+	string r; int max_length = 0;
+	pair<int,int> p;
+	
+	int lcs[100][100] = {0};
+	
+	for(int i = 1;i<=s1.length();i++){
+	
+		for(int j = 1;j<=s2.length();j++){
+		
+			if(s1[i-1] == s2[j-1]){
+			
+				lcs[i][j] = 1 +lcs[i-1][j-1];
+				if(max_length < lcs[i][j]){
+					max_length = lcs[i][j];
+					p.first = i;
+					p.second = j;
+				}
+				
+			}
+		}
+	}
+	
+	int i = p.first - max_length;
+	
+	r = s1.substr(i,max_length);
+	
+	return r;
+
+}
+
+string BasicAlgorithm::longest_common_subsequence(string s1, string s2){
+
+	string s;
+	
+	return s;
+
+}

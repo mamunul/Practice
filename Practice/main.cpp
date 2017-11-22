@@ -86,15 +86,9 @@ int main(int argc, const char * argv[]) {
 //	ex.pub_method();
 	
 	BasicAlgorithm b; int n = 25;
-	std::vector<int> v = b.fibonacci_loop_memo(n);
-//
-	std::cout << v.at(n) << endl;
-	
-
-	std::cout << b.fibonacci_logn(n) << std::endl; //generates random output
-
 
 	
+	cout << b.longest_common_substring("abcdef", "fagbcdef") << endl;
 	
 	
 

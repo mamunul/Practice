@@ -31,8 +31,6 @@
 /* Begin PBXFileReference section */
 		0C0338041FC2960F0081B0BF /* BasicAlgorithm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BasicAlgorithm.cpp; sourceTree = SOURCE_ROOT; };
 		0C0338051FC2960F0081B0BF /* BasicAlgorithm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BasicAlgorithm.hpp; sourceTree = SOURCE_ROOT; };
-		0C690B601FC1832A00241C56 /* Books.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Books.plist; path = ../../../../Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/Books/Books.plist; sourceTree = "<group>"; };
-		0C690B611FC1833100241C56 /* Books.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Books.plist; path = ../../../../Library/Containers/com.apple.BKAgentService/Data/Documents/iBooks/Books/Books.plist; sourceTree = "<group>"; };
 		0C7E6EDB1FBAA50500648225 /* ExampleB.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExampleB.cpp; path = Practice/ExampleB.cpp; sourceTree = SOURCE_ROOT; };
 		0C7E6EDC1FBAA50500648225 /* ExampleB.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ExampleB.hpp; path = Practice/ExampleB.hpp; sourceTree = SOURCE_ROOT; };
 		0C91895E1FB6C50900689CDF /* Practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Practice; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +93,7 @@
 				0CBDAF9D1FB95BB900784265 /* ExampleA.cpp */,
 				0CBDAF9E1FB95BB900784265 /* ExampleA.hpp */,
 				0C7E6EDB1FBAA50500648225 /* ExampleB.cpp */,
-				0C690B611FC1833100241C56 /* Books.plist */,
 				0C7E6EDC1FBAA50500648225 /* ExampleB.hpp */,
-				0C690B601FC1832A00241C56 /* Books.plist */,
 				0C0338041FC2960F0081B0BF /* BasicAlgorithm.cpp */,
 				0C0338051FC2960F0081B0BF /* BasicAlgorithm.hpp */,
 			);
