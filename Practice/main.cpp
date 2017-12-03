@@ -18,7 +18,11 @@ void test(ExampleB *e){//pass by reference
 	e->vir_pub_method2();//dynamically bind method at runtime
 
 };
-
+int matrixsum(int **a, int **b, int m, int n)
+{
+    return a[m][n] + b[m][n];
+    
+}
 void test3(ExampleA *e){
 	e->vir_pub_method2();
 }
@@ -58,21 +62,21 @@ int main(int argc, const char * argv[]) {
 //	ExampleB e = ExampleA();
 //	e.vir_pub_method();
 //	e.vir_pub_method2();
-	ExampleB *e = new ExampleA();
+//    ExampleB *e = new ExampleA();
+//
+//    ExampleB *e2 = new ExampleB();
+//
+//    ExampleA *ea = new ExampleA();
 	
-	ExampleB *e2 = new ExampleB();
+//    e->vir_pub_method2();
+//    e2->vir_pub_method2();
+//
+//    ExampleB e123 = ExampleB();
 	
-	ExampleA *ea = new ExampleA();
+//    ExampleB e234 = ExampleA();//values are copied from ExampleA class methods are pointng to ExampleB class -- so ExampleA methods are not visible which is implicit assignment operator behavior, to change it override it.
 	
-	e->vir_pub_method2();
-	e2->vir_pub_method2();
-	
-	ExampleB e123 = ExampleB();
-	
-	ExampleB e234 = ExampleA();//values are copied from ExampleA class methods are pointng to ExampleB class -- so ExampleA methods are not visible which is implicit assignment operator behavior, to change it override it.
-	
-	e123.vir_pub_method2();
-	e234.vir_pub_method2();
+//    e123.vir_pub_method2();
+//    e234.vir_pub_method2();
 
 	
 //	test3(ea);
@@ -87,11 +91,15 @@ int main(int argc, const char * argv[]) {
 	
 	BasicAlgorithm b; int n = 25;
 
+    cout << b.knuth_morris_pratt("abcaby", "abxabcabcabx") << endl;
 	
-	cout << b.longest_common_substring("abcdef", "fagbcdef") << endl;
-	
+
+//    int r = matrixsum(a, b, 4, 4);
 	
 
 	
     return 0;
 }
+
+
+
