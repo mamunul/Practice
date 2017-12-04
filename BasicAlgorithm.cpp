@@ -8,6 +8,7 @@
 
 #include "BasicAlgorithm.hpp"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -325,4 +326,76 @@ bool BasicAlgorithm::knuth_morris_pratt(string pattern,string str){
 
 }
 
+int BasicAlgorithm::rabin_karp(string pattern, string str){
+    
+    int hash = 0;
+    for(int i = 0;i<pattern.length();i++){
+        hash += (i+1)*pattern[i];
+    }
+    
+    for(int i = 0;i<=(str.length()-pattern.length());i++){
+        int subhash = 0;
+        for (int j = i; j<(i+pattern.length()); j++) {
+            subhash += (j-i+1)*str[j];
+        }
+        if(hash == subhash)
+            return i;
+    }
+    
+    return -1;
+}
 
+vector<vector<int>> BasicAlgorithm::floyd_warshall(vector<vector<int>> graph){
+    //positive and negative
+    for(int i = 0;i<graph.size();i++){
+        for(int j = 0;j<graph[i].size();j++){
+            for(int k = 0;k<graph[i].size();k++){
+                graph[i][j] = min(graph[i][j],graph[i][k]+graph[k][j]);
+            }
+        }
+    }
+    return graph;
+}
+
+vector<int> BasicAlgorithm::dijkstra(vector<vector<int>> graph){
+    //positive only
+    vector<int> dp((int)graph.size(),1000);
+    vector<int> visited((int)graph.size(),0);
+    int c = (int)graph.size();
+    dp[0] = 0;
+    int v = 0;
+    while(c-- > 0){
+        visited[v] = 1;
+        int mindp = 1000;int minv = 0;
+        for(int j = 0;j<graph.size();j++){
+            if(graph[v][j] > 0 && !visited[j]){
+                if(v == 0){
+                    dp[j] = graph[v][j];
+                }else{
+                    dp[j] = min(dp[j],graph[v][j]+dp[v]);
+                }
+                
+                if(mindp>dp[j] ){
+                    mindp = dp[j];
+                    minv = j;
+                }
+            }
+        }
+        v = minv;
+    }
+    
+    return dp;
+}
+
+vector<int> BasicAlgorithm::bellman_ford(vector<Edge> graph,int vertexCount){
+    //positive and negative
+    vector<int> dp(vertexCount,1000);
+    dp[0] = 0;
+    vertexCount--;
+    while(vertexCount-- >0){
+        for(vector<Edge>::iterator itr = graph.begin();itr != graph.end();itr++){
+           dp[itr->d] = min(dp[itr->d],dp[itr->s]+itr->w);
+        }
+    }
+    return dp;
+}

@@ -16,6 +16,11 @@
 
 using namespace std;
 
+typedef struct{
+    int s;
+    int d;
+    int w;
+}Edge;
 class BasicAlgorithm{
 public:
 	bool isPrime(unsigned long long n);
@@ -33,7 +38,10 @@ public:
     set<int> prime_factors(int n);
     vector<int> seive_eratosthenes(int n);
     bool knuth_morris_pratt(string pattern,string str);
-	
+    int rabin_karp(string pattern,string str);
+    vector<vector<int>> floyd_warshall(vector<vector<int>> graph);
+    vector<int> dijkstra(vector<vector<int>> graph);
+    vector<int> bellman_ford(vector<Edge> graph,int vertexCount);
 };
 
 #endif /* BasicAlgorithm_hpp */

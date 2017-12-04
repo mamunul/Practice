@@ -10,6 +10,7 @@
 #include "ExampleA.hpp"
 #include "ExampleB.hpp"
 #include "BasicAlgorithm.hpp"
+#define INF 1000
 //#include "VectorElementPractice.hpp"
 //#include "ArgumentPractice.hpp"
 
@@ -90,8 +91,33 @@ int main(int argc, const char * argv[]) {
 //	ex.pub_method();
 	
 	BasicAlgorithm b; int n = 25;
+    vector<vector<int>> v {
+        {0,-1,4,0,0},
+        {0,0,3,2,2},
+        {0,0,0,0,0},
+        {0,1,5,0,0},
+        {0,0,0,-3,0}
+    };
+    vector<Edge> g;
+    g.push_back(Edge{0,1,-1});
+    g.push_back(Edge{0,2,4});
+    g.push_back(Edge{1,2,3});
+    g.push_back(Edge{1,3,2});
+    g.push_back(Edge{1,4,2});
+    g.push_back(Edge{3,1,1});
+    g.push_back(Edge{3,2,5});
+    g.push_back(Edge{4,3,-3});
 
-    cout << b.knuth_morris_pratt("abcaby", "abxabcabcabx") << endl;
+//    vector<vector<int>> v2 = b.floyd_warshall(v);
+    vector<int> v3 = b.bellman_ford(g,5);
+    for(int i = 0;i<v3.size();i++){
+ 
+        cout << v3[i] << " ";
+  
+        cout << endl;
+    }
+
+    
 	
 
 //    int r = matrixsum(a, b, 4, 4);
