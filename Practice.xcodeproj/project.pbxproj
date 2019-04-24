@@ -14,6 +14,7 @@
 		0C91897A1FB6E90300689CDF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189731FB6E90300689CDF /* main.cpp */; };
 		0C91897B1FB6E90300689CDF /* Sample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C9189771FB6E90300689CDF /* Sample.cpp */; };
 		0CBDAF9F1FB95BB900784265 /* ExampleA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBDAF9D1FB95BB900784265 /* ExampleA.cpp */; };
+		B247B84C22705B4100AD0322 /* SegmentTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B247B84A22705B4100AD0322 /* SegmentTree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		0C9189771FB6E90300689CDF /* Sample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sample.cpp; path = Practice/Sample.cpp; sourceTree = SOURCE_ROOT; };
 		0CBDAF9D1FB95BB900784265 /* ExampleA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ExampleA.cpp; path = Practice/ExampleA.cpp; sourceTree = SOURCE_ROOT; };
 		0CBDAF9E1FB95BB900784265 /* ExampleA.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ExampleA.hpp; path = Practice/ExampleA.hpp; sourceTree = SOURCE_ROOT; };
+		B247B84A22705B4100AD0322 /* SegmentTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SegmentTree.cpp; sourceTree = SOURCE_ROOT; };
+		B247B84B22705B4100AD0322 /* SegmentTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SegmentTree.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				0C7E6EDC1FBAA50500648225 /* ExampleB.hpp */,
 				0C0338041FC2960F0081B0BF /* BasicAlgorithm.cpp */,
 				0C0338051FC2960F0081B0BF /* BasicAlgorithm.hpp */,
+				B247B84A22705B4100AD0322 /* SegmentTree.cpp */,
+				B247B84B22705B4100AD0322 /* SegmentTree.hpp */,
 			);
 			name = Practice;
 			path = Patterns;
@@ -141,6 +146,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 0C9189551FB6C50800689CDF;
@@ -161,6 +167,7 @@
 				0CBDAF9F1FB95BB900784265 /* ExampleA.cpp in Sources */,
 				0C7E6EDD1FBAA50500648225 /* ExampleB.cpp in Sources */,
 				0C9189781FB6E90300689CDF /* VectorElementPractice.cpp in Sources */,
+				B247B84C22705B4100AD0322 /* SegmentTree.cpp in Sources */,
 				0C91897B1FB6E90300689CDF /* Sample.cpp in Sources */,
 				0C9189791FB6E90300689CDF /* ArgumentPractice.cpp in Sources */,
 				0C91897A1FB6E90300689CDF /* main.cpp in Sources */,
